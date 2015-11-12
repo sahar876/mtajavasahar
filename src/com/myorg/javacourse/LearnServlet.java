@@ -4,9 +4,14 @@ import java.io.IOException;
 import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
-public class JavaSaharVahabaServlet extends HttpServlet {
+public class LearnServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello, sahar again, again!");
+		
+		int x = 1;
+		int y = 1;
+		String result = x + " + " + y + " = " + (x + y);
+		
+		resp.getWriter().println(result);
 	}
 }
